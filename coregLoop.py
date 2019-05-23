@@ -334,7 +334,7 @@ plt.plot(pointlist[:,0],pointlist[:,1])
 
 #Now run the coregistration
 tic=time.time()
-a=coregLoopHistory(pointlist,ts0=0,ts1=10,plateID=201)
+a=coregLoopHistory(pointlist,ts0=0,ts1=230,plateID=201)
 toc=time.time()
 print("Time taken:", toc-tic, " seconds")
 
@@ -422,7 +422,7 @@ andeanOut.close()
 
 
 #Now make a set of "non-deposits" using a random formation age
-randomAges=numpy.random.randint(1,10,size=len(chemdata))
+randomAges=numpy.random.randint(1,230,size=len(chemdata))
 
 
 # In[21]:
